@@ -11,7 +11,7 @@ module.exports = {
     main: APP_PATH,
   },
   output: {
-    filename: './assets/[name].[hash:4].js',
+    filename: './assets/js/[name].[hash:4].js',
     path: BUILD_PATH,
   },
   module: {
@@ -39,10 +39,17 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+        test: /\.(woff|woff2|eot|ttf)$/,
         loader: 'file-loader',
         options: {
-          name: './assets/[name].[hash:4].[ext]',
+          name: './assets/fonts/[name].[ext]',
+        },
+      },
+      {
+        test: /\.(bpm|gif|jpeg|png|svg)$/,
+        loader: 'file-loader',
+        options: {
+          name: './assets/media/[name].[ext]',
         },
       },
     ],
@@ -52,7 +59,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './client/public/index.html',
     }),
-    new MiniCssExtractPlugin({ filename: './assets/[name].[hash:4].css' }),
+    new MiniCssExtractPlugin({ filename: './assets/css/[name].[hash:4].css' }),
   ],
   resolve: {
     extensions: ['.js', '.jsx'],
