@@ -1,0 +1,17 @@
+{
+  "name": "react-webpack-template",
+  "version": "1.0.0",
+  "description": "React.js + Webpack quick start project",
+  "main": "index.js",
+  "scripts": {
+    "client": ""
+  },
+  "author": "Smokie",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.4",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.1"
+  }
+}
