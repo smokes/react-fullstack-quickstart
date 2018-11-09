@@ -11,7 +11,7 @@ module.exports = {
     main: APP_PATH,
   },
   output: {
-    filename: '[name].[contenthash:4].js',
+    filename: './assets/[name].[hash:4].js',
     path: BUILD_PATH,
   },
   module: {
@@ -28,19 +28,22 @@ module.exports = {
         test: /(\.css|.scss)$/,
         use: [
           {
-            loader: MiniCssExtractPlugin.loader, // creates style nodes from JS strings
+            loader: MiniCssExtractPlugin.loader,
           },
           {
-            loader: 'css-loader', // translates CSS into CommonJS
+            loader: 'css-loader',
           },
           {
-            loader: 'sass-loader', // compiles Sass to CSS
+            loader: 'sass-loader',
           },
         ],
       },
       {
         test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-        loader: 'url-loader?limit=100000',
+        loader: 'file-loader',
+        options: {
+          name: './assets/[name].[hash:4].[ext]',
+        },
       },
     ],
   },
@@ -49,9 +52,16 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './client/public/index.html',
     }),
-    new MiniCssExtractPlugin({ filename: './assets/[name].[contenthash:4].css' }),
+    new MiniCssExtractPlugin({ filename: './assets/[name].[hash:4].css' }),
   ],
   resolve: {
     extensions: ['.js', '.jsx'],
+  },
+  devServer: {
+    port: 3000,
+    open: true,
+    proxy: {
+      '/api': 'http://localhost:8080',
+    },
   },
 };

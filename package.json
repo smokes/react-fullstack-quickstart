@@ -4,7 +4,11 @@
   "description": "Fullstack boilerplate to quickstart a project with React and Express",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "start": "npm run build && babel-node server/server.js --no-babelrc --presets @babel/preset-env",
+    "server": "nodemon server/server.js --exec babel-node --no-babelrc --presets @babel/preset-env",
+    "client": "webpack-dev-server --mode development --hot",
+    "fullstack": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Smokie",
   "license": "MIT",
@@ -18,13 +22,16 @@
     "react-dom": "^16.6.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.1.5",
     "@babel/core": "^7.1.5",
+    "@babel/node": "^7.0.0",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
     "@babel/preset-env": "^7.1.5",
     "@babel/preset-react": "^7.0.0",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.4",
     "clean-webpack-plugin": "^0.1.19",
+    "concurrently": "^4.0.1",
     "css-loader": "^1.0.1",
     "eslint": "^5.8.0",
     "eslint-config-airbnb": "^17.1.0",
@@ -33,6 +40,7 @@
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-react": "^7.11.1",
     "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^2.0.0",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.4.4",
     "node-sass": "^4.10.0",

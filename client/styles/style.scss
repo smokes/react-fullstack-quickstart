@@ -1,7 +1,4 @@
-@font-face {
-    font-family: 'Fira Code';
-    src: url() format('truetype');
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body {
     background-color: #42aaf4;
@@ -9,6 +6,19 @@ body {
     margin: auto;
 }
 h1 {
-    font-size: 18px;
-    font-family: 'Open Sans';
+    font-size: 40px;
+    font-family: 'Roboto';
+    color: white;
+    top: 40px;
+    margin: 0%;
+    position: relative;
+    
+}
+.react-logo {
+    color: white;
+    position: relative;
+    top: 10px;
+    height: 20%;
+    width: 20%;
+    margin-top: 10%;
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import reactsvg from './public/react.svg';
 
 class App extends Component {
   state = { username: undefined };
@@ -19,10 +20,8 @@ class App extends Component {
     const { username } = this.state;
     return (
       <div>
-        <h1>
-          Welcome
-          {`${username}`}
-        </h1>
+        <img src={reactsvg} alt="React Logo" className="react-logo" />
+        <h1>{`${username} welcome to your React application.`}</h1>
       </div>
     );
   }
