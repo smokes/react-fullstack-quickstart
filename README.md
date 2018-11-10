@@ -6,7 +6,7 @@
 
 I figured out i could learn how to setup my own fullstack boilerplate with React, Webpack and Express.
 
-# Quick Setup
+## Quick Setup
 ```bash
 # Clones the repository
 $ git clone git@github.com:imsmokie/react-fullstack-quickstart.git 
@@ -30,7 +30,7 @@ Jest is already configured to work with enzyme so you could easily test your Rea
 ### Sass support
 Done through node-sass with Webpack's sass-loader
 
-# NPM Scripts
+## NPM Scripts
 ```bash
 # Builds your React application and runs an express instance to serve them with the api
 $ npm start
@@ -47,11 +47,11 @@ $ npm run test
 # Runs unit tests with jest and watches for file changes
 $ npm run test-watch
 ```
-# LICENSE 
+## LICENSE 
 
-[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/hyperium/hyper/master/LICENSE)
+Published under the MIT LICENSE, for more info check 
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/imsmokie/react-fullstack-quickstart/master/LICENSE)
 
-Published under the MIT LICENSE, for more info check [LICENSE](https://github.com/imsmokie/react-fullstack-quickstart/blob/master/LICENSE)
 
 
 
