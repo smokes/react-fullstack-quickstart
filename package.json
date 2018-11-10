@@ -1,7 +1,7 @@
 {
-  "name": "react-webpack-template",
+  "name": "react-fullstack-boilerplate",
   "version": "1.0.0",
-  "description": "Fullstack boilerplate to quickstart a project with React and Express",
+  "description": "Fullstack boilerplate to quickstart a project with React, Webpack and Express",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
