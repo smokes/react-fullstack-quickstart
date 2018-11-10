@@ -12,5 +12,12 @@
         "quotes": "off",
         "prettier/prettier": "error",
         "react/jsx-filename-extension": "off"
-    }
+    },
+    "overrides": [{
+        "files": [ "*.test.js" ],
+        "rules": {
+          "no-unused-expressions": 0,
+          "no-undef": 0
+        }
+      }]
 }
