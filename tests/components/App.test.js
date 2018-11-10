@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import App from '../client/App';
+import App from '../../client/App';
 
 describe('<App /> Component', () => {
   it('Renders Smokie welcome to your React application.', () => {

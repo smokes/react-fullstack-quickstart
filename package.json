@@ -9,7 +9,7 @@
     "server": "nodemon server/server.js --exec babel-node --no-babelrc --presets @babel/preset-env",
     "client": "webpack-dev-server --mode development --hot",
     "fullstack": "concurrently \"npm run server\" \"npm run client\"",
-    "test": "jest --watch"
+    "test": "jest --watchAll"
   },
   "author": "Smokie",
   "license": "MIT",

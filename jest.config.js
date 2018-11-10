@@ -1,8 +1,8 @@
 const path = require('path');
 
 const TEST_PATH = path.resolve(__dirname, './tests/setup.js');
-const MOCK_PATH = path.resolve(__dirname, './tests/fileMock.js');
-const STYLE_MOCK_PATH = path.resolve(__dirname, './tests/styleMock.js');
+const MOCK_PATH = path.resolve(__dirname, './tests/mocks/fileMock.js');
+const STYLE_MOCK_PATH = path.resolve(__dirname, './tests/mocks/styleMock.js');
 
 module.exports = {
   setupFiles: [TEST_PATH],
