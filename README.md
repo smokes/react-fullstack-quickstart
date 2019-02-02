@@ -1,15 +1,15 @@
 # react-fullstack-quickstart
 
-[![Build Status](https://travis-ci.org/imsmokie/react-fullstack-quickstart.svg?branch=master)](https://travis-ci.org/imsmokie/react-fullstack-quickstart)
-[![GitHub issues](https://img.shields.io/github/issues/imsmokie/react-fullstack-quickstart.svg)](https://GitHub.com/imsmokie/react-fullstack-quickstart/issues/)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1eabe23c00984adfabf4df424c3770ea)](https://www.codacy.com/app/imsmokie/react-fullstack-quickstart?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=imsmokie/react-fullstack-quickstart&amp;utm_campaign=Badge_Grade)
+[![Build Status](https://travis-ci.org/smokes/react-fullstack-quickstart.svg?branch=master)](https://travis-ci.org/smokes/react-fullstack-quickstart)
+[![GitHub issues](https://img.shields.io/github/issues/smokes/react-fullstack-quickstart.svg)](https://GitHub.com/smokes/react-fullstack-quickstart/issues/)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1eabe23c00984adfabf4df424c3770ea)](https://www.codacy.com/app/smokes/react-fullstack-quickstart?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=smokes/react-fullstack-quickstart&amp;utm_campaign=Badge_Grade)
 
 I figured out i could learn how to setup my own fullstack boilerplate with React, Webpack and Express.
 
 ## Quick Setup
 ```bash
 # Clones the repository
-$ git clone git@github.com:imsmokie/react-fullstack-quickstart.git 
+$ git clone git@github.com:smokes/react-fullstack-quickstart.git 
 # Changes directory
 $ cd react-fullstack-quickstart
 # Installs all dependencies
@@ -50,7 +50,7 @@ $ npm run test-watch
 ## LICENSE 
 
 Published under the MIT LICENSE, for more info check 
-[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/imsmokie/react-fullstack-quickstart/master/LICENSE)
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/smokes/react-fullstack-quickstart/master/LICENSE)
 
 
 
