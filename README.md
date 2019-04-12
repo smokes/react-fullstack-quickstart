@@ -9,7 +9,7 @@ I figured out i could learn how to setup my own fullstack boilerplate with React
 ## Quick Setup
 ```bash
 # Clones the repository
-$ git clone git@github.com:smokes/react-fullstack-quickstart.git 
+$ git clone https://github.com/smokes/react-fullstack-quickstart.git
 # Changes directory
 $ cd react-fullstack-quickstart
 # Installs all dependencies
