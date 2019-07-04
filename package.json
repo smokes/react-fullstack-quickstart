@@ -24,7 +24,7 @@
     "morgan": "^1.9.1",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
-    "snyk": "^1.161.1"
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.5",
